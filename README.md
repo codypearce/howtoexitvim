@@ -12,3 +12,10 @@ Learn a fews ways to exit vim, built as a simple example of building and deployi
 3. `npm i`
 4. `npm start`
 
+
+## Tech
+
+* React
+* React Native Web
+* React Resposive
+* Webpack
