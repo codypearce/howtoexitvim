@@ -17,5 +17,5 @@ Learn a fews ways to exit vim, built as a simple example of building and deployi
 
 * React
 * React Native Web
-* React Resposive
+* React Responsive
 * Webpack
