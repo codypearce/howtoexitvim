@@ -13,13 +13,37 @@ export default class App extends React.Component {
         <View>
           <Title title={"How to Exit Vim"} />
           <View>
-            <Command description={"Save Changes"} command={":q!"} />
             <Command
-              description={"Save Changes (Fails if changes)"}
+              description={"Quit"}
+              subDescription={"Fails if changes were made"}
               command={":q"}
             />
-            <Command description={"Exit and Save"} command={":wq"} />
-            <Command description={"Exit and Save"} command={"shift + ZZ"} />
+            <Command
+              description={"Quit without writing"}
+              subDescription={"Discard changes"}
+              command={":q!"}
+            />
+
+            <Command
+              description={"Write current file and Quit"}
+              subDescription={"Saves changes even if there arent any"}
+              command={":wq"}
+            />
+            <Command
+              description={"Write current file and Quit"}
+              subDescription={"Saves changes only if there changes"}
+              command={":x"}
+            />
+            <Command
+              description={"Write current file and Quit"}
+              subDescription={"Saves changes only if there changes"}
+              command={"shift + ZZ"}
+            />
+            <Command
+              description={"Quit without writing"}
+              subDescription={"Discard changes"}
+              command={"shift + ZQ"}
+            />
           </View>
         </View>
       </Container>
