@@ -5,13 +5,14 @@ import { Text, StyleSheet, View } from "react-native";
 import Container from "./Container";
 import Command from "./Command";
 import Title from "./Title";
-
+import Escape from "./Escape";
 export default class App extends React.Component {
   render() {
     return (
       <Container>
-        <View>
+        <View style={{ maxWidth: 785 }}>
           <Title title={"How to Exit Vim"} />
+          <Escape />
           <View>
             <Command
               description={"Quit"}
@@ -35,14 +36,14 @@ export default class App extends React.Component {
               command={":x"}
             />
             <Command
-              description={"Write current file and Quit"}
-              subDescription={"Saves changes only if there changes"}
-              command={"shift + ZZ"}
-            />
-            <Command
               description={"Quit without writing"}
               subDescription={"Discard changes"}
               command={"shift + ZQ"}
+            />
+            <Command
+              description={"Write current file and Quit"}
+              subDescription={"Saves changes only if there changes"}
+              command={"shift + ZZ"}
             />
           </View>
         </View>

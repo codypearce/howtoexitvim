@@ -15,7 +15,7 @@ const styles = {
   textShadowColor: "#FF00DE",
   textShadowOffset: { width: -1, height: 1 },
   textShadowRadius: 30,
-  marginBottom: 20
+  marginBottom: 16
 };
 
 Title.propTypes = {
