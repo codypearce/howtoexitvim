@@ -5,26 +5,25 @@ import { View, Text } from "react-native";
 export default function Command({ description, command, subDescription }) {
   return (
     <View style={styles.container}>
-      <View style={styles.commandBlock}>
-        <Text style={styles.command}>{command}</Text>
+      <Text style={styles.command}>{command}</Text>
+      <View style={styles.descriptionContainer}>
         <Text style={styles.description}>{description}</Text>
+        {subDescription ? (
+          <Text style={styles.subDescription}>({subDescription})</Text>
+        ) : null}
       </View>
-      {subDescription ? (
-        <Text style={styles.subDescription}>({subDescription})</Text>
-      ) : null}
     </View>
   );
 }
 
 const styles = {
   container: {
-    marginBottom: 30
-  },
-  commandBlock: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center"
+
+    marginBottom: 30
   },
+
   command: {
     fontSize: 40,
     color: "#7DF9FF",
@@ -34,7 +33,11 @@ const styles = {
 
     textShadowOffset: { width: -2, height: 2 },
     textShadowRadius: 30,
-    marginRight: 20
+    flex: 1,
+    marginRight: 8
+  },
+  descriptionContainer: {
+    flex: 1
   },
   description: {
     fontSize: 18,
@@ -44,7 +47,9 @@ const styles = {
 
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 30,
-    textAlign: "right"
+    textAlign: "right",
+
+    marginBottom: 6
   },
   subDescription: {
     fontSize: 12,
