@@ -32,7 +32,7 @@ export default class App extends React.Component {
           />
           <Command
             description={"Write current file and Quit"}
-            subDescription={"Saves changes only if there changes"}
+            subDescription={"Saves changes only if there are changes"}
             command={":x"}
           />
           <Command
@@ -42,7 +42,7 @@ export default class App extends React.Component {
           />
           <Command
             description={"Write current file and Quit"}
-            subDescription={"Saves changes only if there changes"}
+            subDescription={"Saves changes only if there are changes"}
             command={"shift + ZZ"}
           />
         </View>

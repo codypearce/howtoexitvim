@@ -28,9 +28,7 @@ const styles = {
     fontSize: 40,
     color: "#7DF9FF",
     textShadowColor: "#7DF9FF",
-
     fontFamily: "Orbitron",
-
     textShadowOffset: { width: -2, height: 2 },
     textShadowRadius: 30,
     flex: 1,
