@@ -4,6 +4,7 @@
 
 Learn a fews ways to exit vim, built as a simple example of building and deploying a React Native Web app to Netlify.
 
+Check out this article, [Build and Deploy a React Native Web App on Netlify from Scratch](https://www.consolelogs.dev/build-deploy-react-native-web-on-netlify/), to learn more how this was built.
 
 ## Quick Start
 
